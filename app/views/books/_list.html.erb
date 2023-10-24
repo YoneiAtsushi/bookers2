@@ -1,21 +1,20 @@
-<h1>User info</h1>
+<h2>User info</h2>
 
-<%= image_tag user.get_profile_image(100,100) %>
+<div><%= image_tag user.get_profile_image(100,100) %></div>
 
-<table>
- <tr>
-  <th>name</th>
-  <td><strong><%= user.name %></strong></td>
- </tr>
-
- <tr>
-  <th>introduction</th>
-  <td><strong><%= user.introduction %></strong></td>
- </tr>
+<table class="table">
+ <tbody>
+   <tr>
+    <th>name</th>
+    <td><strong><%= user.name %></strong></td>
+   </tr>
+   <tr>
+    <th>introduction</th>
+    <td><strong><%= user.introduction %></strong></td>
+   </tr>
+ </tbody>
 </table>
-
- <%= link_to "編集", edit_user_path(user.id) %>
-
+<%= link_to "", edit_user_path(user.id), class: "btn btn-outline-secondary btn-block fa-user-gear" %>
 <h1>New book</h1>
 <%= form_with model: book do |f| %>
   <h6>Title</h6>
