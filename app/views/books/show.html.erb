@@ -53,14 +53,14 @@
               <% end %>
            </td>
               <% end %>
-              
+         </tr>
+        </tbody>
+      </table>
               <%= form_with model: [@book, @book_comment] do |f| %>
             <%= f.text_area :comment, rows: '5',cols: '70', placeholder: "コメントをここに" %>
             <%= f.submit "送信する" %>
-          </tr>
+        
              <% end %>
-        </tbody>
-      </table>
     </div>
   </div>
 </div>
