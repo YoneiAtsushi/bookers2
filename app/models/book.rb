@@ -13,10 +13,9 @@ def favorited_by?(user)
   validates :body, presence: true
   validates :body, length: { maximum: 200 } 
  
-end
-
-# 検索方法分岐
- # allの意味は？
+ 
+ # 検索方法分岐
+# allの意味は？
 # %定義の意味
   def self.looks(search, word)
     if search == "perfect_match"
@@ -31,3 +30,5 @@ end
       @book = Book.all
     end
   end
+end
+
