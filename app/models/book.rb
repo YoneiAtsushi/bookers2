@@ -16,6 +16,8 @@ def favorited_by?(user)
 end
 
 # 検索方法分岐
+ # allの意味は？
+# %定義の意味
   def self.looks(search, word)
     if search == "perfect_match"
       @book = Book.where("title LIKE?","#{word}")
