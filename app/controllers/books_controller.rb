@@ -8,7 +8,7 @@ class BooksController < ApplicationController
     # @book_user = Book.find(params[:id])
     # @user = User.find(params[:id])
     # @book_user = @user.books
-    # @users = User.find(params[:id])
+    
 
   end
 
